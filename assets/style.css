@@ -1,0 +1,22 @@
+.saved-cities {
+    display: block;
+    width: 100%;
+    border: black;
+    padding: 15px;
+    text-align: center;
+    right: 15px;
+}
+
+.fiveDay {
+    padding: 10px;
+}
+
+#header-text {
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.card {
+    background: cornflowerblue!important;
+}

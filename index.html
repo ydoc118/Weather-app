@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-primary">
+        <h1 id="header-text">Weather Forecast</h1>
+    </nav>
+
+    <nav class="navbar bg-light">
+        <div class="col-3" id="search-bar">
+            <h3>Search for a city:</h3>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control city-search" placeholder="City Name" aria-label="Search" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                </div>
+              </div>
+        </div>
+    </nav>
+
+    
+        <div class="row">
+            <div class="col-3">
+                <div id= "saved-cities"></div>
+            </div>
+
+            <div class="col-9 current-city">
+                    <h2 id="city-name"></h2>
+                    <p id="temp"></p>
+                    <p id="humidity"></p>
+                    <p id="wind-speed"></p>
+                    <p id="uv-index"></p>
+
+                    <div class="row forecast">
+                        <h1 id="forecast-list"></h1>
+                        <div class="col-12" id="five-day">
+                            <div class = "row">
+                                <div class="card">
+                                    <div id="1" class="card-body"></div>
+                                </div>
+                                <div class="card">
+                                    <div id="2" class="card-body"></div>
+                                </div>
+                                <div class="card">
+                                    <div id="3" class="card-body"></div>
+                                </div>
+                                <div class="card">
+                                    <div id="4" class="card-body"></div>
+                                </div>
+                                <div class="card">
+                                    <div id="5" class="card-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            
+        </div>
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
